@@ -13,7 +13,7 @@ export const CartScreen = () => {
             {carrito.length ===0
             ?<>
             <h2>Tu carrito de compras se encuentra vacío</h2>
-            <Link to ="/" className="btn btn-success">Ir a comprar</Link>
+            <Link to ="/" className="btn btn-secondary">Ir a comprar</Link>
             </>
             :
 
@@ -26,7 +26,7 @@ export const CartScreen = () => {
                 <div>
                 <h4>{prod.name}</h4>
                 <p>Cantidad: {prod.quantity}</p>
-                <p>Precio: ${prod.price * prod.quantity}</p>
+                <p>Subtotal: ${prod.price * prod.quantity}</p>
                 <button className="btn btn-danger" onClick={() => removeItem (prod.id)}>
                 <FaTrashAlt/>
                 </button>

@@ -18,3 +18,13 @@ color: rgba(2, 37, 46, 0.767);
 h4{
 font-style: italic;   
 }
+
+.col2{
+background-color: whitesmoke;   
+margin: 20px;
+padding: 20px;
+}
+
+img:hover {
+transform: scale(1.1, 1.1); 
+}

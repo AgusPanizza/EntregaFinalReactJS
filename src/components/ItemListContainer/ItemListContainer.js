@@ -1,8 +1,11 @@
 import React, {useContext, useEffect, useState} from 'react'
 import { useParams } from 'react-router'
 import { UIContext } from '../../context/UIContext'
-import { pedirProductos } from '../../helpers/pedirProductos'
+import { getFirestore } from '../../firebase/config'
+//import { pedirProductos } from '../../helpers/pedirProductos'
 import { ItemList } from './ItemList'
+import{Spinner} from 'react-bootstrap'
+
 
 export const ItemListContainer =() =>  {
 
@@ -13,7 +16,24 @@ export const ItemListContainer =() =>  {
     const {categoryId} = useParams()
 
     useEffect(() =>{
-        setLoading(true)
+
+        const db = getFirestore()
+        const productos = categoryId 
+                        ?db.collection('productos').where ('category', '==', categoryId)
+                        : db.collection ('productos')
+
+        productos.get ()
+        .then((response) =>{
+            const newItems = response.docs.map ((doc) =>{
+            return {id: doc.id, ...doc.data()}
+            })
+            setItems (newItems)
+        } )
+        .catch(err => console.log(err))
+        .finally(()=> {setLoading(false)}
+        )
+        
+      /*  setLoading(true)
 
         pedirProductos()
         .then((res) =>{
@@ -27,13 +47,13 @@ export const ItemListContainer =() =>  {
         .finally (()=> {
             setLoading(false)
             console.log("Fin del llamado")
-        })
-    }, [categoryId])
+        }) */
+    }, [categoryId, setLoading])
     
     return (
 <section className="container my-5">  
  {loading
-    ? <h2>Loading...</h2>
+    ? <Spinner animation="grow"/>
     : <ItemList productos={items}/>
 }
 </section>

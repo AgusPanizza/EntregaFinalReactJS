@@ -1,5 +1,6 @@
 //import logo from './logo.svg';
 import { NavBar } from './components/NavBar/NavBar';
+import { Footer } from './components/Footer/Footer';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import './App.css';
@@ -26,7 +27,7 @@ function App() {
 
       <BrowserRouter>
 
-      <NavBar logo=""/>  
+      <NavBar logo=""/>
 
       <Switch>
         <Route exact path="/">
@@ -43,6 +44,10 @@ function App() {
 
         <Route exact path="/patisserie">
           <h1>Patisserie</h1>
+        </Route>
+        
+        <Route exact path="/e-Shop">
+        <ItemListContainer/>       
         </Route>
 
         <Route exact path="/e-Shop/:categoryId">
@@ -65,6 +70,8 @@ function App() {
         <Redirect to= "/"></Redirect>
         </Route>
       </Switch>
+
+      <Footer/> 
 
       </BrowserRouter>
       

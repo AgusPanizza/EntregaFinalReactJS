@@ -57,3 +57,12 @@
     background-image: url(./img/Max.png); }
   100% {
     background-image: url(./img/Cafecito.png); } }
+
+    footer {
+      background-color: rgba(2, 68, 85, 0.767);
+      display: flex;
+      color: whitesmoke;
+      font-size: 11px;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-right: 2%; }
