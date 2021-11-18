@@ -33,7 +33,7 @@ export const ItemDetail = ({id, name, price, img, description, category, stock})
 <Container>
     <Row>
         <Col> <br/>
-    <img src= {img} height= "500px" alt={name}/>
+    <img src= {img} height= "600px" alt={name}/>
         </Col>
         <Col className= "col2"> <br/><br/>  
     <h2>{name}</h2> <br/>

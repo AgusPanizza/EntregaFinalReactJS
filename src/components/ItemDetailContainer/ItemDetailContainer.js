@@ -45,7 +45,7 @@ export const ItemDetailContainer = () => {
     return (
         <div>
         {
-            loading ? <Spinner animation="grow"/>
+            loading ? <Spinner animation="border"/>
             : <ItemDetail {...item}/>
         }
         </div>

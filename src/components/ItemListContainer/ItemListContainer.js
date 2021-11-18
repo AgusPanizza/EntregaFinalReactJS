@@ -52,8 +52,7 @@ export const ItemListContainer =() =>  {
     
     return (
 <section className="container my-5">  
- {loading
-    ? <Spinner animation="grow"/>
+ {  loading ? <Spinner animation="grow"/>
     : <ItemList productos={items}/>
 }
 </section>

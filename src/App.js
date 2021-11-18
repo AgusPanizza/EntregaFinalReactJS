@@ -14,6 +14,7 @@ import {
 import { CartProvider } from './context/CartContext';               
 import { CartScreen } from './components/CartScreen/CartScreen';
 import { UIProvider } from './context/UIContext';
+import { Checkout } from './components/Checkout/Checkout';
 
 
 function App() {
@@ -64,6 +65,10 @@ function App() {
         
         <Route exact path="/cart">
         <CartScreen/>
+        </Route>
+
+        <Route exact path="/checkout">
+        <Checkout/>
         </Route>
 
         <Route path="*">
