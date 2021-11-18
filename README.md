@@ -17,10 +17,11 @@ Node JS (https://nodejs.org/en/)
 npx create-react-app "ramble"
 CD "ramble"
 npm start
-http://localhost:3000 (link para accederal al proyecto durante el desarrollo)
+
 
 ## Link al proyecto
 https://github.com/AgusPanizza/EntregaFinalReactJS
+http://localhost:3000 
 
 Video de como navegar en la página:
 Screen Recording 2021-11-17 at 22.22.47.mov
