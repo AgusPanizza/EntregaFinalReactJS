@@ -11,7 +11,7 @@ Gitihub (https://github.com)
 React-Bootstrap (https://react-bootstrap.github.io/getting-started/introduction/)
 Sweet Alert (https://sweetalert2.github.io)
 Firebase (https://firebase.google.com)
-Node JS
+Node JS (https://nodejs.org/en/)
 
 ## Instalación 
 npx create-react-app "ramble"
