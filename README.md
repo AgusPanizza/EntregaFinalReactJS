@@ -1,5 +1,6 @@
-# RAMBLA - información general
+# RAMBLA  
 
+**Información general**
 Rambla es un café de especialidad. 
 La idea de este proyecto es poder mostrar quienes somos, que hacemos y cuales son los productos que vendemos. 
 Creamos un e-shop para darle la posibilidad a nuestros clientes de comprar online sin necesidad de moverse de sus casas. Pueden elegir que productos quieren y dejar sus datos de contacto para efectuar la compra. 
@@ -19,9 +20,9 @@ npm start
 http://localhost:3000 (link para accederal al proyecto durante el desarrollo)
 
 
-**Creado por: Agustina Panizza **
+Creado por: Agustina Panizza
 
-**El sitio todavía se encuentra en desarrollo**
+**-El sitio todavía se encuentra en desarrollo-**
 
 
 
