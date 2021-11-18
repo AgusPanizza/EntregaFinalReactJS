@@ -21,8 +21,10 @@ http://localhost:3000 (link para accederal al proyecto durante el desarrollo)
 
 ## Página
 
+Video de como navegar en la página:
+Screen Recording 2021-11-17 at 22.22.47.mov
 
-Creado por: Agustina Panizza
+**Proyecto creado por: Agustina Panizza**
 
 **-El sitio todavía se encuentra en desarrollo-**
 
